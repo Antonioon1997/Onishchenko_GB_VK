@@ -64,6 +64,9 @@
                                         <state key="normal" title="Login in">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="loginButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fjE-cX-tnr"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Haven't an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KgS-Du-qHb">
                                         <rect key="frame" x="10" y="390" width="179" height="24"/>
@@ -116,6 +119,7 @@
                         <outlet property="loginTextField" destination="oCY-n5-Ebn" id="Qdm-fv-Qse"/>
                         <outlet property="passwordTextField" destination="j1m-wL-LDG" id="1LC-z3-cIC"/>
                         <outlet property="pugBackground" destination="Jv3-fP-3Or" id="pmb-Lt-VSj"/>
+                        <outlet property="scrollView" destination="6Od-d1-RTH" id="yiC-9L-q8o"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
