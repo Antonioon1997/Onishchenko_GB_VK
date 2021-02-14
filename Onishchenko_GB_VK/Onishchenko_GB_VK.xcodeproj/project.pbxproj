@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A6580F325D96850001810BF /* FriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6580F225D96850001810BF /* FriendsTableViewController.swift */; };
+		7A6580F625D96871001810BF /* FriendsPhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6580F525D96871001810BF /* FriendsPhotosViewController.swift */; };
 		7A90F16925D8180700AFE203 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A90F16825D8180700AFE203 /* AppDelegate.swift */; };
 		7A90F16B25D8180700AFE203 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A90F16A25D8180700AFE203 /* SceneDelegate.swift */; };
 		7A90F16D25D8180700AFE203 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A90F16C25D8180700AFE203 /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7A6580F225D96850001810BF /* FriendsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTableViewController.swift; sourceTree = "<group>"; };
+		7A6580F525D96871001810BF /* FriendsPhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsPhotosViewController.swift; sourceTree = "<group>"; };
 		7A90F16525D8180700AFE203 /* Onishchenko_GB_VK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Onishchenko_GB_VK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A90F16825D8180700AFE203 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A90F16A25D8180700AFE203 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +64,8 @@
 				7A90F16A25D8180700AFE203 /* SceneDelegate.swift */,
 				7A90F16C25D8180700AFE203 /* ViewController.swift */,
 				7A90F16E25D8180700AFE203 /* Main.storyboard */,
+				7A6580F225D96850001810BF /* FriendsTableViewController.swift */,
+				7A6580F525D96871001810BF /* FriendsPhotosViewController.swift */,
 				7A90F17125D8180900AFE203 /* Assets.xcassets */,
 				7A90F17325D8180900AFE203 /* LaunchScreen.storyboard */,
 				7A90F17625D8180900AFE203 /* Info.plist */,
@@ -139,6 +145,8 @@
 			files = (
 				7A90F16D25D8180700AFE203 /* ViewController.swift in Sources */,
 				7A90F16925D8180700AFE203 /* AppDelegate.swift in Sources */,
+				7A6580F625D96871001810BF /* FriendsPhotosViewController.swift in Sources */,
+				7A6580F325D96850001810BF /* FriendsTableViewController.swift in Sources */,
 				7A90F16B25D8180700AFE203 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -23,10 +23,11 @@ class ViewController: UIViewController {
         self.pugBackground.backgroundColor = UIColor(red: 210.0/256.0, green: 128.0/256.0, blue: 128.0/256.0, alpha: 1)
         self.loginTextField.backgroundColor = UIColor(red: 210.0/256.0, green: 128.0/256.0, blue: 128.0/256.0, alpha: 1)
         
+            //MARK
         self.passwordTextField.clearsOnBeginEditing = true
         self.passwordTextField.isSecureTextEntry = true
         self.passwordTextField.backgroundColor = UIColor(red: 210.0/256.0, green: 128.0/256.0, blue: 128.0/256.0, alpha: 1)
-        
+            //MARK
         self.loginButton.showsTouchWhenHighlighted = true
         self.loginButton.layer.cornerRadius = 5
         
@@ -70,9 +71,12 @@ class ViewController: UIViewController {
     
     @IBAction func loginButtonAction(_ sender: UIButton) {
         if loginTextField.text == login && passwordTextField.text == password {
-            print ("Success")
+            self.performSegue(withIdentifier: "FromLoginScreen", sender: self)
         } else {
-            print ("Wrong")
+            let alert = UIAlertController(title: "Error", message: "Wrong login or password", preferredStyle: .actionSheet)
+            let alertButton = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
+            alert.addAction(alertButton)
+            present(alert, animated: true, completion: nil)
         }
     }
 }
