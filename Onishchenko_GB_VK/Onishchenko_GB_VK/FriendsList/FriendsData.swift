@@ -13,3 +13,4 @@ struct FriendsData {
     let photo: UIImage?
     var photosInAlbum: [UIImage?]
 }
+

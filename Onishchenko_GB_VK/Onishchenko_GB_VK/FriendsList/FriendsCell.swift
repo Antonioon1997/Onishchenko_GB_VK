@@ -11,7 +11,7 @@ class FriendsCell: UITableViewCell {
     
     @IBOutlet var friendName: UILabel!
     @IBOutlet var friendMessage: UILabel!
-    @IBOutlet var friendPhoto: UIImageView!
+    @IBOutlet var friendPhoto: AvatarView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

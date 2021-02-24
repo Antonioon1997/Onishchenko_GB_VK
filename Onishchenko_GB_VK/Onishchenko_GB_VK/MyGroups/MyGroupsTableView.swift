@@ -35,11 +35,12 @@ class MyGroupsTableView: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "myGroupsCell", for: indexPath) as! MyGroupsCell
-        cell.groupAvatar.layer.cornerRadius = 25.0
-        cell.groupAvatar.layer.borderWidth = 1.0
-        cell.groupAvatar.clipsToBounds = true
+//        cell.groupAvatar.layer.cornerRadius = 25.0
+//        cell.groupAvatar.layer.borderWidth = 1.0
+//        cell.groupAvatar.clipsToBounds = true
         
-        cell.groupAvatar.image = myGroupsInfo[indexPath.row].groupAvatar
+//        cell. = myGroupsInfo[indexPath.row].groupAvatar
+        cell.groupAvatar.avatarImageView.image = myGroupsInfo[indexPath.row].groupAvatar
         cell.groupName.text = myGroupsInfo[indexPath.row].groupName
         cell.groupInfo.text = myGroupsInfo[indexPath.row].groupInfo
         

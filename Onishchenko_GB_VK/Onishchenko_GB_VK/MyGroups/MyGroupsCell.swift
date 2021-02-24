@@ -8,8 +8,10 @@
 import UIKit
 
 class MyGroupsCell: UITableViewCell {
+//
+//    @IBOutlet var groupAvatar: AvatarView!
     
-    @IBOutlet var groupAvatar: UIImageView!
+    @IBOutlet var groupAvatar: AvatarView!
     @IBOutlet var groupName: UILabel!
     @IBOutlet var groupInfo: UILabel!
     

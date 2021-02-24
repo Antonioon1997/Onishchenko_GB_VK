@@ -15,7 +15,8 @@ class FriendsTableViewController: UITableViewController {
         FriendsData(name: "Joke", message: "A'm I some kind of joke to you?", photo: UIImage(named: "Joke"), photosInAlbum: [UIImage(named: "joke1"), UIImage(named: "joke2"), UIImage(named: "joke3")]),
         FriendsData(name: "Pug", message: "Zzz Zzz Zzz", photo: UIImage(named: "sleeping pug"), photosInAlbum: [UIImage(named: "pug1"), UIImage(named: "pug2"), UIImage(named: "pug3")]),
         FriendsData(name: "Man", message: "Why are you gay?", photo: UIImage(named: "why are you gae"), photosInAlbum: [UIImage(named: "why1"), UIImage(named: "why2"), UIImage(named: "why3")]),
-    ]
+        FriendsData(name: "Manuil", message: "Who om I?", photo: UIImage(named: "like.true"), photosInAlbum: [UIImage(named: "why1"), UIImage(named: "why2"), UIImage(named: "why3")])
+    ].sorted(by: {$0.name < $1.name})
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,27 +26,27 @@ class FriendsTableViewController: UITableViewController {
     
     // MARK: - Table view data source
     override func numberOfSections(in tableView: UITableView) -> Int {
-        
+//
         return 1
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
+    
         return friendsData.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MyFriendsCell", for: indexPath) as! FriendsCell
         
-        cell.friendPhoto.layer.cornerRadius = 25.0
-        cell.friendPhoto.layer.borderWidth = 2.0
-        cell.friendPhoto.clipsToBounds = true
-        
         cell.friendName.text = friendsData[indexPath.row].name
         cell.friendMessage.text = friendsData[indexPath.row].message
-        cell.friendPhoto.image = friendsData[indexPath.row].photo
+        cell.friendPhoto.avatarImageView.image = friendsData[indexPath.row].photo
         
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     
     // MARK: - prepare segue to go to selected cell
@@ -56,6 +57,14 @@ class FriendsTableViewController: UITableViewController {
            let friendsPhotosCollectionController = segue.destination as? FriendsPhotosCollection {
             let selectedFriend = friendsData[friendCellIndexPath.row]
             friendsPhotosCollectionController.currentFriend = selectedFriend
+        }
+    }
+    func getCharactersInArray () {
+        let charactersInArrow = friendsData.map({$0.name.first!})
+        var stringCharactersInArrow = [String] ()
+        
+        for characters in charactersInArrow{
+            stringCharactersInArrow.append(String(characters))
         }
     }
 }

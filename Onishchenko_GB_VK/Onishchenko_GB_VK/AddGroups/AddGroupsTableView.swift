@@ -37,7 +37,7 @@ class AddGroupsTableView: UITableViewController {
         cell.addGroupAvatar.layer.borderWidth = 1.0
         cell.addGroupAvatar.clipsToBounds = true
 
-        cell.addGroupAvatar.image = groups[indexPath.row].groupAvatar
+        cell.addGroupAvatar.avatarImageView.image = groups[indexPath.row].groupAvatar
         cell.addGroupName.text = groups[indexPath.row].groupName
         cell.addGroupInfo.text = groups[indexPath.row].groupInfo
 
