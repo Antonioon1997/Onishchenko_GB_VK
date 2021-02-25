@@ -14,7 +14,7 @@ class AddGroupsTableView: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.tableView.backgroundColor = UIColor(patternImage: UIImage(named: "background2")!)
+        self.tableView.backgroundColor = UIColor(red: 0/255, green: 14/255, blue: 36/255, alpha: 1)
             navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
     }
 

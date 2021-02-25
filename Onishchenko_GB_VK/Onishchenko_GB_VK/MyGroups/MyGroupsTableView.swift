@@ -14,10 +14,11 @@ class MyGroupsTableView: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tableView.backgroundColor = UIColor(patternImage: UIImage(named: "background2")!)
-        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        tabBarController?.tabBar.backgroundImage = UIImage()
+        self.tableView.backgroundColor = UIColor(red: 0/255, green: 14/255, blue: 36/255, alpha: 1)
+        navigationController?.navigationBar.backgroundColor = UIColor.gray
+        tabBarController?.tabBar.backgroundColor = UIColor.gray
         tabBarController?.tabBar.unselectedItemTintColor = UIColor(red: 0/0, green: 0/0, blue: 0/0, alpha: 1)
+        tabBarController?.tabBar.tintColor = UIColor.black
     }
     
     // MARK: - Table view data source
@@ -35,11 +36,7 @@ class MyGroupsTableView: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "myGroupsCell", for: indexPath) as! MyGroupsCell
-//        cell.groupAvatar.layer.cornerRadius = 25.0
-//        cell.groupAvatar.layer.borderWidth = 1.0
-//        cell.groupAvatar.clipsToBounds = true
-        
-//        cell. = myGroupsInfo[indexPath.row].groupAvatar
+
         cell.groupAvatar.avatarImageView.image = myGroupsInfo[indexPath.row].groupAvatar
         cell.groupName.text = myGroupsInfo[indexPath.row].groupName
         cell.groupInfo.text = myGroupsInfo[indexPath.row].groupInfo
@@ -58,6 +55,10 @@ class MyGroupsTableView: UITableViewController {
                 
             }
         }
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     
     //MARK: - Func to remove groups from list

@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         //MARK: - Style
-        self.background.backgroundColor = UIColor(patternImage: UIImage(named: "background2")!)
+        self.background.backgroundColor = UIColor(red: 0/255, green: 14/255, blue: 36/255, alpha: 1)
         self.pugBackground.backgroundColor = UIColor(red: 256.0/256.0, green: 256.0/256.0, blue:256.0/256.0, alpha: 0.3)
         self.loginTextField.backgroundColor = UIColor(red: 256.0/256.0, green: 256.0/256.0, blue: 256.0/256.0, alpha: 0.8)
         self.passwordTextField.backgroundColor = UIColor(red: 256.0/256.0, green: 256.0/256.0, blue: 256.0/256.0, alpha: 0.8)
@@ -33,6 +33,7 @@ class ViewController: UIViewController {
         //MARK: - Hide KB
         let hideKeyboardGesture = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
         scrollView?.addGestureRecognizer(hideKeyboardGesture)
+        
     }
     
     //MARK: - Nitifications for KB

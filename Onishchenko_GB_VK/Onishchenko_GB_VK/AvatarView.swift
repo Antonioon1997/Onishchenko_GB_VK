@@ -11,7 +11,7 @@ class AvatarView: UIView {
     
     @IBOutlet var shadowView: UIView!
     @IBOutlet var avatarImageView: UIImageView!
-    @IBInspectable var shadowColor: CGColor = UIColor.black.cgColor
+    @IBInspectable var shadowColor: CGColor = UIColor.red.cgColor
     @IBInspectable var shadowRadius: CGFloat = 33
     @IBInspectable var shadowOpacity: Float = 1
     
