@@ -28,7 +28,7 @@ class LikeView: UIControl {
         tapGesture.addTarget(self, action: #selector(tapGestureDetected))
         self.addGestureRecognizer(tapGesture)
         self.backgroundColor = .clear
-        likeImage.backgroundColor = .clear
+//        likeImage.backgroundColor = .clear
         
         
         
