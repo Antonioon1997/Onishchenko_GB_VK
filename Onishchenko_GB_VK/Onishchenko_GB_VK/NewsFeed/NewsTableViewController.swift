@@ -9,13 +9,21 @@ import UIKit
 
 class NewsTableViewController: UITableViewController {
     
-    private var newsData: [NewsData] = [ NewsData(newsLogo: UIImage(named: "pug"), newsName: "Your mom", newsTime: "long long ago", newsPost: "I'll fock your family,bro", newsImages: UIImage(named: "pug"))]
+    private var newsData: [NewsData] = [
+        NewsData(newsLogo: UIImage(named: "pug"), newsName: "Your mom", newsTime: "long long ago", newsPost: "I'll fock your family,bro", newsImages: [UIImage(named: "pug"), UIImage(named: "pug")]),
+        NewsData(newsLogo: UIImage(named: "pug"), newsName: "Your mom", newsTime: "long long ago", newsPost: "I'll fock your family,bro", newsImages: [UIImage(named: "rikardo1"), UIImage(named: "rikardo1"), UIImage(named: "rikardo1")]),
+        NewsData(newsLogo: UIImage(named: "bonk1"), newsName: "Bonk", newsTime: "recently", newsPost: "Go to the horny jail!", newsImages: [UIImage(named: "bonk2")])
+    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: "NewsCellTableView", bundle: nil), forCellReuseIdentifier: "NewsCellTableView")
+        
+        self.tableView.backgroundColor = UIColor(red: 0/255, green: 14/255, blue: 36/255, alpha: 1)
+        tabBarController?.tabBar.tintColor = UIColor.black
+    
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -37,9 +45,14 @@ class NewsTableViewController: UITableViewController {
         
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+    }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "NewsCellTableView", for: indexPath) as! NewsCellTableView
+        
+        let postImages = [cell.postImage1, cell.postImage2, cell.postImage3, cell.postImage4]
+        postImages.forEach({$0?.isHidden = true})
 
         let cellData = newsData[indexPath.row]
         
@@ -47,7 +60,20 @@ class NewsTableViewController: UITableViewController {
         cell.name.text = cellData.newsName
         cell.time.text = cellData.newsTime
         cell.post.text = cellData.newsPost
-        cell.postImage.image = cellData.newsImages
+        for i in 0..<cellData.newsImages.count{
+            do {
+            postImages[i]?.isHidden = false
+            postImages[i]?.image = cellData.newsImages[i]
+            }
+            while cellData.newsImages.count <= 4 {
+                
+                break
+            }
+            
+        }
+//        postImages[indexPath.row]?.image = cellData.newsImages[indexPath.row]
+       
+        
         
         
 

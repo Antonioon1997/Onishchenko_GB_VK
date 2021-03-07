@@ -13,6 +13,6 @@ struct NewsData {
     var newsName: String!
     var newsTime: String!
     var newsPost: String?
-    var newsImages: UIImage?
+    var newsImages: [UIImage?]
     
 }

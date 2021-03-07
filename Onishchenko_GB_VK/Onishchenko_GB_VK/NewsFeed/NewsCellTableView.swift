@@ -16,11 +16,18 @@ class NewsCellTableView: UITableViewCell {
     @IBOutlet var name: UILabel!
     @IBOutlet var time: UILabel!
     @IBOutlet var post: UILabel!
-    @IBOutlet var postImage: UIImageView!
+    @IBOutlet var postImage1: UIImageView!
+    @IBOutlet var postImage2: UIImageView!
+    @IBOutlet var postImage3: UIImageView!
+    @IBOutlet var postImage4: UIImageView!
     @IBOutlet var likeView: LikeView!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.backgroundColor = UIColor(red: 0/255, green: 14/255, blue: 36/255, alpha: 1)
+       
+        
         // Initialization code
     }
 

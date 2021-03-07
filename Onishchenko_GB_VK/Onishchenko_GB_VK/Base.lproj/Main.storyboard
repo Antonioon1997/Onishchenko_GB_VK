@@ -612,7 +612,7 @@
             </objects>
             <point key="canvasLocation" x="1876.8115942028987" y="424.55357142857139"/>
         </scene>
-        <!--News Table View Controller-->
+        <!--News-->
         <scene sceneID="RVu-jf-AxU">
             <objects>
                 <tableViewController id="fgP-jv-AWP" customClass="NewsTableViewController" customModule="Onishchenko_GB_VK" customModuleProvider="target" sceneMemberID="viewController">
@@ -635,17 +635,17 @@
                             <outlet property="delegate" destination="fgP-jv-AWP" id="ggU-uk-iFz"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="qA1-ML-llL"/>
+                    <navigationItem key="navigationItem" title="News" id="qA1-ML-llL"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FkO-wY-fup" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2786.9565217391305" y="1138.3928571428571"/>
         </scene>
-        <!--Item-->
+        <!--News-->
         <scene sceneID="ePk-Uu-fPD">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="URd-rL-kxg" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Xba-0S-OvV"/>
+                    <tabBarItem key="tabBarItem" title="News" selectedImage="newspaper.fill" catalog="system" id="Xba-0S-OvV"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rns-hA-y6a">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -662,6 +662,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="newspaper.fill" catalog="system" width="128" height="111"/>
         <image name="person" catalog="system" width="128" height="117"/>
         <image name="person.3" catalog="system" width="128" height="62"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
