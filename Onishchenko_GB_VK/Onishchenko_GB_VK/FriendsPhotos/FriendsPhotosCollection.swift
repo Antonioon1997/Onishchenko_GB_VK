@@ -14,7 +14,7 @@ class FriendsPhotosCollection: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.collectionView.backgroundColor = UIColor(patternImage: UIImage(named: "background2")!)
+        self.collectionView.backgroundColor = UIColor(red: 0/255, green: 14/255, blue: 36/255, alpha: 1)
         title = currentFriend?.name
     }
     

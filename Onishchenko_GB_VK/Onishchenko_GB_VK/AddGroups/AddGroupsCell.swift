@@ -8,7 +8,9 @@
 import UIKit
 
 class AddGroupsCell: UITableViewCell {
-    @IBOutlet var addGroupAvatar: UIImageView!
+//    @IBOutlet var addGroupAvatar: UIImageView!
+    
+    @IBOutlet var addGroupAvatar: AvatarView!
     @IBOutlet var addGroupName: UILabel!
     @IBOutlet var addGroupInfo: UILabel!
     

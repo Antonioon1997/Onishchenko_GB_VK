@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A5D33E825E7F24100935D97 /* GradiendBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5D33E725E7F24100935D97 /* GradiendBackground.swift */; };
+		7A5D33EB25E7F2C800935D97 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5D33EA25E7F2C800935D97 /* Background.swift */; };
+		7A5D33EE25E8142100935D97 /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5D33ED25E8142100935D97 /* HeaderCell.swift */; };
 		7A6580F325D96850001810BF /* FriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6580F225D96850001810BF /* FriendsTableViewController.swift */; };
 		7A79D52925DDA7A4003BF42D /* FriendsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A79D52825DDA7A4003BF42D /* FriendsCell.swift */; };
 		7A79D52C25DDA7E1003BF42D /* FriendsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A79D52B25DDA7E1003BF42D /* FriendsData.swift */; };
@@ -22,11 +25,16 @@
 		7A90F17525D8180900AFE203 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A90F17325D8180900AFE203 /* LaunchScreen.storyboard */; };
 		7ACA638D25DE61DE00A1E6F4 /* FriendPhotosCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACA638C25DE61DE00A1E6F4 /* FriendPhotosCell.swift */; };
 		7ACA639325DE655700A1E6F4 /* FriendsPhotosCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACA639225DE655700A1E6F4 /* FriendsPhotosCollection.swift */; };
+		7AD5A9B625E5367800E97278 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD5A9B525E5367800E97278 /* AvatarView.swift */; };
+		7AD5A9BE25E582B100E97278 /* LikeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD5A9BD25E582B100E97278 /* LikeView.swift */; };
 		7AECECB725DEB62C00F6B37B /* AddGroupsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AECECB625DEB62C00F6B37B /* AddGroupsTableView.swift */; };
 		7AECECBA25DEB64100F6B37B /* AddGroupsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AECECB925DEB64100F6B37B /* AddGroupsCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7A5D33E725E7F24100935D97 /* GradiendBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradiendBackground.swift; sourceTree = "<group>"; };
+		7A5D33EA25E7F2C800935D97 /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
+		7A5D33ED25E8142100935D97 /* HeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
 		7A6580F225D96850001810BF /* FriendsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTableViewController.swift; sourceTree = "<group>"; };
 		7A79D52825DDA7A4003BF42D /* FriendsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsCell.swift; sourceTree = "<group>"; };
 		7A79D52B25DDA7E1003BF42D /* FriendsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsData.swift; sourceTree = "<group>"; };
@@ -44,6 +52,8 @@
 		7A90F17625D8180900AFE203 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7ACA638C25DE61DE00A1E6F4 /* FriendPhotosCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendPhotosCell.swift; sourceTree = "<group>"; };
 		7ACA639225DE655700A1E6F4 /* FriendsPhotosCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsPhotosCollection.swift; sourceTree = "<group>"; };
+		7AD5A9B525E5367800E97278 /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
+		7AD5A9BD25E582B100E97278 /* LikeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeView.swift; sourceTree = "<group>"; };
 		7AECECB625DEB62C00F6B37B /* AddGroupsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGroupsTableView.swift; sourceTree = "<group>"; };
 		7AECECB925DEB64100F6B37B /* AddGroupsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGroupsCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,6 +75,7 @@
 				7A6580F225D96850001810BF /* FriendsTableViewController.swift */,
 				7A79D52825DDA7A4003BF42D /* FriendsCell.swift */,
 				7A79D52B25DDA7E1003BF42D /* FriendsData.swift */,
+				7A5D33ED25E8142100935D97 /* HeaderCell.swift */,
 			);
 			path = FriendsList;
 			sourceTree = "<group>";
@@ -102,6 +113,10 @@
 				7A90F16A25D8180700AFE203 /* SceneDelegate.swift */,
 				7A90F16C25D8180700AFE203 /* ViewController.swift */,
 				7A90F16E25D8180700AFE203 /* Main.storyboard */,
+				7A5D33EA25E7F2C800935D97 /* Background.swift */,
+				7AD5A9BD25E582B100E97278 /* LikeView.swift */,
+				7A5D33E725E7F24100935D97 /* GradiendBackground.swift */,
+				7AD5A9B525E5367800E97278 /* AvatarView.swift */,
 				7AECECBC25DEB64700F6B37B /* AddGroups */,
 				7A87EBBB25DE9F8200214314 /* MyGroups */,
 				7A79D52F25DDA7FF003BF42D /* FriendsList */,
@@ -207,14 +222,19 @@
 				7A87EB9325DE754000214314 /* FriendsPhotos.swift in Sources */,
 				7A79D52925DDA7A4003BF42D /* FriendsCell.swift in Sources */,
 				7A79D52C25DDA7E1003BF42D /* FriendsData.swift in Sources */,
+				7A5D33EB25E7F2C800935D97 /* Background.swift in Sources */,
 				7A87EBBE25DE9FA300214314 /* MyGroupsCell.swift in Sources */,
 				7A90F16925D8180700AFE203 /* AppDelegate.swift in Sources */,
 				7A87EBC225DE9FCA00214314 /* MyGroups.swift in Sources */,
+				7A5D33EE25E8142100935D97 /* HeaderCell.swift in Sources */,
 				7ACA639325DE655700A1E6F4 /* FriendsPhotosCollection.swift in Sources */,
+				7AD5A9BE25E582B100E97278 /* LikeView.swift in Sources */,
 				7A6580F325D96850001810BF /* FriendsTableViewController.swift in Sources */,
 				7ACA638D25DE61DE00A1E6F4 /* FriendPhotosCell.swift in Sources */,
 				7AECECBA25DEB64100F6B37B /* AddGroupsCell.swift in Sources */,
 				7A90F16B25D8180700AFE203 /* SceneDelegate.swift in Sources */,
+				7A5D33E825E7F24100935D97 /* GradiendBackground.swift in Sources */,
+				7AD5A9B625E5367800E97278 /* AvatarView.swift in Sources */,
 				7AECECB725DEB62C00F6B37B /* AddGroupsTableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
