@@ -37,8 +37,8 @@ class MyGroupsTableView: UITableViewController {
         navigationItem.searchController = searchController
         definesPresentationContext = true
     
-        
     }
+    
     
     // MARK: - Table view data source
     
