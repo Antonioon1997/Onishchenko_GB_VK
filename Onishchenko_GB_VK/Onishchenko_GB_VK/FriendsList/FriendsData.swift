@@ -12,5 +12,6 @@ struct FriendsData {
     let message: String
     let photo: UIImage?
     var photosInAlbum: [UIImage?]
+ 
 }
 

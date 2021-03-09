@@ -24,6 +24,8 @@
 		7A90F17025D8180700AFE203 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A90F16E25D8180700AFE203 /* Main.storyboard */; };
 		7A90F17225D8180900AFE203 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A90F17125D8180900AFE203 /* Assets.xcassets */; };
 		7A90F17525D8180900AFE203 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A90F17325D8180900AFE203 /* LaunchScreen.storyboard */; };
+		7AA86FD425FDF80900B0E215 /* FullscreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA86FD325FDF80900B0E215 /* FullscreenViewController.swift */; };
+		7AA86FD825FFCC2400B0E215 /* FlippingScreenAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA86FD725FFCC2300B0E215 /* FlippingScreenAnimation.swift */; };
 		7ACA638D25DE61DE00A1E6F4 /* FriendPhotosCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACA638C25DE61DE00A1E6F4 /* FriendPhotosCell.swift */; };
 		7ACA639325DE655700A1E6F4 /* FriendsPhotosCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACA639225DE655700A1E6F4 /* FriendsPhotosCollection.swift */; };
 		7ACEFBBB25F2154500DB3A89 /* NewsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACEFBBA25F2154500DB3A89 /* NewsData.swift */; };
@@ -55,6 +57,8 @@
 		7A90F17125D8180900AFE203 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A90F17425D8180900AFE203 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A90F17625D8180900AFE203 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7AA86FD325FDF80900B0E215 /* FullscreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullscreenViewController.swift; sourceTree = "<group>"; };
+		7AA86FD725FFCC2300B0E215 /* FlippingScreenAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlippingScreenAnimation.swift; sourceTree = "<group>"; };
 		7ACA638C25DE61DE00A1E6F4 /* FriendPhotosCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendPhotosCell.swift; sourceTree = "<group>"; };
 		7ACA639225DE655700A1E6F4 /* FriendsPhotosCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsPhotosCollection.swift; sourceTree = "<group>"; };
 		7ACEFBBA25F2154500DB3A89 /* NewsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsData.swift; sourceTree = "<group>"; };
@@ -133,6 +137,8 @@
 				7A90F16A25D8180700AFE203 /* SceneDelegate.swift */,
 				7A90F16C25D8180700AFE203 /* ViewController.swift */,
 				7A90F16E25D8180700AFE203 /* Main.storyboard */,
+				7AA86FD725FFCC2300B0E215 /* FlippingScreenAnimation.swift */,
+				7AA86FD325FDF80900B0E215 /* FullscreenViewController.swift */,
 				7A5D33EA25E7F2C800935D97 /* Background.swift */,
 				7AD5A9BD25E582B100E97278 /* LikeView.swift */,
 				7A5D33E725E7F24100935D97 /* GradiendBackground.swift */,
@@ -239,10 +245,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A90F16D25D8180700AFE203 /* ViewController.swift in Sources */,
+				7AA86FD825FFCC2400B0E215 /* FlippingScreenAnimation.swift in Sources */,
 				7A87EBB825DE9F7E00214314 /* MyGroupsTableView.swift in Sources */,
 				7ACEFBC125F221C200DB3A89 /* NewsCellTableView.swift in Sources */,
 				7A87EB9325DE754000214314 /* FriendsPhotos.swift in Sources */,
 				7A79D52925DDA7A4003BF42D /* FriendsCell.swift in Sources */,
+				7AA86FD425FDF80900B0E215 /* FullscreenViewController.swift in Sources */,
 				7A79D52C25DDA7E1003BF42D /* FriendsData.swift in Sources */,
 				7A5D33EB25E7F2C800935D97 /* Background.swift in Sources */,
 				7ACEFBBB25F2154500DB3A89 /* NewsData.swift in Sources */,
