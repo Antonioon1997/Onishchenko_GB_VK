@@ -15,6 +15,7 @@ class AvatarView: UIView {
     @IBInspectable var shadowRadius: CGFloat = 33
     @IBInspectable var shadowOpacity: Float = 1
     
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         self.backgroundColor = .clear
@@ -28,14 +29,10 @@ class AvatarView: UIView {
         avatarImageView.clipsToBounds = true
         avatarImageView.layer.cornerRadius = 33
         addSubview(avatarImageView)
+        
     }
-
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    */
+   
+    
+    
 
 }

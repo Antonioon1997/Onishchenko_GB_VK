@@ -9,17 +9,36 @@ import UIKit
 
 class MyGroupsTableView: UITableViewController {
     
-    var myGroupsInfo = [Groups(groupName: "MetalFlowers", groupAvatar: UIImage(named: "pug"), groupInfo: "Here we talking about the flowers. Boring")]
+    let searchController = UISearchController(searchResultsController: nil)
     
+    var myGroupsInfo = [Groups(groupName: "MetalFlowers", groupAvatar: UIImage(named: "pug"), groupInfo: "Here we talking about the flowers. Boring")]
+    var myFilteredGropsInfo: [Groups] = []
+    
+    var searchBarIsEmpty: Bool{
+        guard let text = searchController.searchBar.text else { return false }
+        return text.isEmpty
+    }
+    
+    var isFiltering: Bool{
+        return searchController.isActive && !searchBarIsEmpty
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.backgroundColor = UIColor(red: 0/255, green: 14/255, blue: 36/255, alpha: 1)
-        navigationController?.navigationBar.backgroundColor = UIColor.gray
-        tabBarController?.tabBar.backgroundColor = UIColor.gray
-        tabBarController?.tabBar.unselectedItemTintColor = UIColor(red: 0/0, green: 0/0, blue: 0/0, alpha: 1)
+//        navigationController?.navigationBar.backgroundColor = UIColor.gray
+//        tabBarController?.tabBar.backgroundColor = UIColor.gray
+//        tabBarController?.tabBar.unselectedItemTintColor = UIColor(red: 0/0, green: 0/0, blue: 0/0, alpha: 1)
         tabBarController?.tabBar.tintColor = UIColor.black
+        
+        searchController.searchResultsUpdater = self
+        searchController.obscuresBackgroundDuringPresentation = false
+        searchController.searchBar.placeholder = "Search for groups"
+        navigationItem.searchController = searchController
+        definesPresentationContext = true
+    
     }
+    
     
     // MARK: - Table view data source
     
@@ -30,6 +49,9 @@ class MyGroupsTableView: UITableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
+        if isFiltering {
+            return myFilteredGropsInfo.count
+        }
         return myGroupsInfo.count
     }
     
@@ -37,9 +59,17 @@ class MyGroupsTableView: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "myGroupsCell", for: indexPath) as! MyGroupsCell
 
-        cell.groupAvatar.avatarImageView.image = myGroupsInfo[indexPath.row].groupAvatar
-        cell.groupName.text = myGroupsInfo[indexPath.row].groupName
-        cell.groupInfo.text = myGroupsInfo[indexPath.row].groupInfo
+        let groups: Groups
+        
+        if isFiltering {
+            groups = myFilteredGropsInfo[indexPath.row]
+        } else {
+            groups = myGroupsInfo[indexPath.row]
+        }
+        
+        cell.groupAvatar.avatarImageView.image = groups.groupAvatar
+        cell.groupName.text = groups.groupName
+        cell.groupInfo.text = groups.groupInfo
         
         return cell
     }
@@ -69,4 +99,18 @@ class MyGroupsTableView: UITableViewController {
         } else if editingStyle == .insert {
         }
     }
+}
+
+extension MyGroupsTableView: UISearchResultsUpdating{
+    func updateSearchResults(for searchController: UISearchController) {
+        filterContentForSearchText( searchController.searchBar.text!)
+    }
+    func  filterContentForSearchText (_ searchText: String) {
+        myFilteredGropsInfo = myGroupsInfo.filter({ (groups: Groups) -> Bool in
+            return groups.groupName.lowercased().contains(searchText.lowercased())
+        })
+        tableView.reloadData()
+    }
+    
+    
 }
